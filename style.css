@@ -4,13 +4,13 @@
 ========================= */
 
 :root {
-  --bg: #080812;
-  --surface: rgba(255, 255, 255, 0.045);
-  --text: #f4f2ff;
-  --muted: #9998b3;
-  --purple: #a78bfa;
-  --blue: #60a5fa;
-  --border: rgba(255, 255, 255, 0.1);
+  --bg: #faf9f6;
+  --surface: rgba(255, 255, 255, 0.78);
+  --text: #242331;
+  --muted: #666575;
+  --purple: #7052b8;
+  --blue: #4777b8;
+  --border: rgba(36, 35, 49, 0.12);
 }
 
 * {
@@ -111,11 +111,11 @@ a {
 }
 
 .navbar nav a:hover {
-  color: white;
+  color: var(--text);
 }
 
 .navbar .nav-contact {
-  color: white;
+  color: var(--text);
   border: 1px solid var(--border);
   padding: 9px 18px;
   border-radius: 30px;
@@ -147,7 +147,7 @@ main {
   padding: 7px 14px;
   border: 1px solid var(--border);
   border-radius: 30px;
-  color: #c5b9ff;
+  color: #61469f;
   font-size: 11px;
   letter-spacing: 1.5px;
 }
@@ -180,10 +180,10 @@ main {
   display: block;
   background: linear-gradient(
     100deg,
-    #c4b5fd,
-    #818cf8,
-    #60a5fa,
-    #c084fc
+    #7052b8,
+    #5369b4,
+    #4777b8,
+    #8056a8
   );
   background-size: 200% auto;
   background-clip: text;
@@ -241,7 +241,7 @@ main {
 
 .button.secondary:hover {
   border-color: var(--purple);
-  color: white;
+  color: var(--text);
 }
 
 .hero-footer {
@@ -250,7 +250,7 @@ main {
   padding-top: 55px;
   display: flex;
   justify-content: space-between;
-  color: #696982;
+  color: #767583;
   font-size: 10px;
   letter-spacing: 2px;
 }
@@ -307,7 +307,7 @@ main {
 .project-card:hover {
   transform: translateY(-5px);
   border-color: rgba(167, 139, 250, 0.5);
-  background: rgba(167, 139, 250, 0.07);
+  background: rgba(112, 82, 184, 0.055);
 }
 
 .project-number {
@@ -329,7 +329,7 @@ main {
 .project-tag {
   display: inline-block;
   margin-top: 25px;
-  color: #aaa0d5;
+  color: #665390;
   font-size: 10px;
   letter-spacing: 1.5px;
 }
@@ -353,9 +353,20 @@ footer {
   border-top: 1px solid var(--border);
   display: flex;
   justify-content: space-between;
-  color: #696982;
+  color: #767583;
   font-size: 10px;
   letter-spacing: 1.5px;
+}
+
+.note-link {
+  color: #767583;
+  font-size: 10px;
+  letter-spacing: 0;
+  transition: color 0.2s;
+}
+
+.note-link:hover {
+  color: var(--purple);
 }
 
 /* =========================
@@ -412,5 +423,10 @@ footer {
     padding: 25px 20px;
     font-size: 8px;
     gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .note-link {
+    flex-basis: 100%;
   }
 }
