@@ -11,7 +11,6 @@
 <body>
   <main class="note-card">
     <a class="back-link" href="/">← 回到首页</a>
-    <p class="eyebrow">只留给你</p>
     <h1>我那时怎么称呼你？<span>（四个字）</span></h1>
     <p class="description">想起来的话，请写下答案。</p>
 
@@ -46,7 +45,7 @@
         const result = await response.json();
 
         if (response.ok && result.correct) {
-          message.textContent = "你还记得。";
+          message.textContent = "真的是你吗？联系我吧：";
           contact.textContent = result.contact;
           contact.hidden = false;
           form.hidden = true;
